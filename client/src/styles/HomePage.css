@@ -1,0 +1,49 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --coolgray: #d5d6d2;
+  --gray-200: #e5e7eb;
+  --gray-400: #9ca3af;
+  --gray-800: #1f2937;
+  --cobalt: #3a5199;
+  --blueback: #27272a;
+  --blue500: #3b82f6;
+}
+
+.showSidebar {
+  height: 100%;
+  width: 16rem;
+  z-index: 10;
+  background-color: var(--cobalt);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.2s ease-out;
+}
+
+.hideSidebar {
+  height: 100%;
+  width: 16rem;
+  background-color: var(--cobalt);
+  transform: translateX(-16rem);
+  transition: transform 0.2s ease-in;
+}
+
+.showBG {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.hideBG {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in;
+}
